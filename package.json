@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Weather in your terminal!",
   "main": "index.js",
+  "bin": {
+    "weather": "./bin/index.js"
+  },
   "author": "Yuri Brunetto (https://ybrntt.com.br)",
   "license": "MIT",
   "dependencies": {
