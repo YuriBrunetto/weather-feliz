@@ -16,8 +16,8 @@ module.exports = (city, countryCode) => {
         [parser.name, parser.sys.country, `${parser.main.temp_min}°C - ${parser.main.temp_max}°C`, parser.main.humidity],
       ]
 
-      let output = table(data) + `${parser.name}: ${parser.weather[0].description}`
-      console.log(chalk.green(output))
+      let output = table(data) + `Current mood: ${parser.weather[0].description}`
+      console.log(`\n${chalk.green(output)}\n`)
     }
   })
 }
