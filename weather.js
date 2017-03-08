@@ -2,6 +2,7 @@
 
 const request = require('request')
 const table = require('table').table
+const chalk = require('chalk')
 const appid = 'ce747f5c51cefcfbf0ddf7a5d61c7d24'
 
 module.exports = (city, countryCode) => {
@@ -16,7 +17,7 @@ module.exports = (city, countryCode) => {
       ]
 
       let output = table(data) + `${parser.name}: ${parser.weather[0].description}`
-      console.log(output)
+      console.log(chalk.green(output))
     }
   })
 }
