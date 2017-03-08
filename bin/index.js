@@ -3,7 +3,7 @@
 
 const weather = require('./../weather')
 const cli = require('meow')({
-  pkg: './../package.json',
+  pkg: './../package.json'
 })
 
 const city = cli.input[0]
