@@ -1,0 +1,13 @@
+{
+  "name": "weather-feliz",
+  "version": "0.0.1",
+  "description": "Weather in your terminal!",
+  "main": "index.js",
+  "author": "Yuri Brunetto (https://ybrntt.com.br)",
+  "license": "MIT",
+  "dependencies": {
+    "meow": "^3.7.0",
+    "request": "^2.80.0",
+    "table": "^4.0.1"
+  }
+}
