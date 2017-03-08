@@ -1,9 +1,10 @@
 'use strict'
 
+require('dotenv').load()
 const request = require('request')
 const table = require('table').table
 const chalk = require('chalk')
-const appid = 'ce747f5c51cefcfbf0ddf7a5d61c7d24'
+const appid = process.env.APPID
 
 module.exports = (city, countryCode) => {
   let url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&units=metric&APPID=${appid}`
