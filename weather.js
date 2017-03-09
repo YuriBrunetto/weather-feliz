@@ -14,7 +14,7 @@ module.exports = (city, countryCode) => {
       let parser = JSON.parse(body)
       let data = [
         ['City', 'Country Code', 'Temperature (min - max)', 'Humidity'],
-        [parser.name, parser.sys.country, `${parser.main.temp_min}°C - ${parser.main.temp_max}°C`, parser.main.humidity],
+        [parser.name, parser.sys.country, `${parser.main.temp_min}°C - ${parser.main.temp_max}°C`, parser.main.humidity]
       ]
 
       let output = table(data) + `Current mood: ${parser.weather[0].description}`
